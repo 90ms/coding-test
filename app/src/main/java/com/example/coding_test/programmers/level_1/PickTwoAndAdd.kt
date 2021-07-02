@@ -1,4 +1,4 @@
-package com.example.coding_test.level_1
+package com.example.coding_test.programmers.level_1
 
 import java.util.*
 

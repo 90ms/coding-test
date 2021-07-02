@@ -1,6 +1,6 @@
 package com.example.coding_test
 
-import com.example.coding_test.level_1.PickTwoAndAdd
+import com.example.coding_test.programmers.level_1.PickTwoAndAdd
 import org.junit.Test
 
 import org.junit.Assert.*

@@ -1,6 +1,6 @@
 package com.example.coding_test
 
-import com.example.coding_test.level_1.MockTest
+import com.example.coding_test.programmers.level_1.MockTest
 import org.junit.Assert
 import org.junit.Test
 

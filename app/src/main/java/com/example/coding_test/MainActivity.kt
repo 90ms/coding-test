@@ -2,7 +2,7 @@ package com.example.coding_test
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.coding_test.level_1.CreateId
+import com.example.coding_test.programmers.level_1.CreateId
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
