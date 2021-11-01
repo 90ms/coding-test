@@ -1,5 +1,8 @@
 package com.example.coding_test.leetcode.easy
 
+import org.junit.Assert
+import org.junit.Test
+
 /**
  * https://leetcode.com/problems/roman-to-integer/
  *
@@ -12,7 +15,7 @@ package com.example.coding_test.leetcode.easy
  * D             500
  * M             1000
  * */
-object RomanToInteger {
+class RomanToIntegerTest {
 
     private val map = mutableMapOf(
         'I' to 1,
@@ -27,7 +30,7 @@ object RomanToInteger {
     var resultInt = 0
     var last = map['M'] ?: 1000
 
-    fun romanToInt(s: String): Int {
+    private fun romanToInt(s: String): Int {
         s.forEach { char ->
             val value = map[char] ?: 0
             if (value > last) resultInt -= last * 2
@@ -36,5 +39,16 @@ object RomanToInteger {
         }
 
         return resultInt
+    }
+
+    @Test
+    fun solution() {
+        val result = romanToInt(ANSWER_1)
+        Assert.assertEquals(RESULT_1, result)
+    }
+
+    companion object {
+        val ANSWER_1 = "LVIII"
+        val RESULT_1 = 58
     }
 }

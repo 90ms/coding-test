@@ -1,4 +1,4 @@
-package com.example.coding_test.leetcode.easy
+package com.example.coding_test.leetcode.medium
 
 /**
  * You are given two non-empty linked lists representing two non-negative integers.

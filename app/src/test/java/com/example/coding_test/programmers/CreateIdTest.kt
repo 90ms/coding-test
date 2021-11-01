@@ -1,4 +1,4 @@
-package com.example.coding_test
+package com.example.coding_test.programmers
 
 import com.example.coding_test.programmers.level_1.CreateId
 import org.junit.Assert

@@ -1,5 +1,8 @@
 package com.example.coding_test.leetcode.medium
 
+import org.junit.Assert
+import org.junit.Test
+
 /**
  *https://leetcode.com/problems/longest-substring-without-repeating-characters/
  *
@@ -7,8 +10,9 @@ package com.example.coding_test.leetcode.medium
  * Output: 3
  * Explanation: The answer is "abc", with the length of 3.
  * */
-object LongestSubstringWithoutRepeating {
-    fun lengthOfLongestSubstring(s: String): Int {
+class LongestSubstringWithoutRepeatingTest {
+
+    private fun lengthOfLongestSubstring(s: String): Int {
         var tmp = ""
         var max = 0
         for (i in 0..s.lastIndex) {
@@ -21,5 +25,16 @@ object LongestSubstringWithoutRepeating {
             }
         }
         return max
+    }
+
+    @Test
+    fun solution() = Assert.assertEquals(
+        RESULT_1, lengthOfLongestSubstring(ANSWER_1)
+    )
+
+
+    companion object {
+        val ANSWER_1 = "abcabcbb"
+        val RESULT_1 = 3
     }
 }
